@@ -21,7 +21,6 @@ public static class DependencyInjection
         services.AddScoped<IProductRepository, ProductRepository>();
 
         var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
-        //services.AddMediatR(myhandlers);
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(myhandlers));
 
         return services;
