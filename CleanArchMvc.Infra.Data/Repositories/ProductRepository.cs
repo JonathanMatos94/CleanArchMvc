@@ -22,12 +22,6 @@ public class ProductRepository : IProductRepository
 
     public async Task<Product> GetByIdAsync(int? id)
     {
-        return await _productRepository.Products.FindAsync(id);
-    }
-
-    public async Task<Product> GetProductCategoryAsync(int? id)
-    {
-        //eager loading ou carregamento adiantado
         return await _productRepository.Products
             .Include(c => c.Category)
             .SingleOrDefaultAsync(p => p.Id == id);
