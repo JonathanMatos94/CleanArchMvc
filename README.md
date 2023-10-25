@@ -1,54 +1,53 @@
-# Projeto de Estudo de Clean Architecture com C#, .NET, e Princípios de MVC, Padrão Repository, CQRS, DDD, Injeção de Dependência e Inversão de Dependência (Curso Clean Architecture Fundamentos - Prof. Macoratti)
+# Clean Architecture Study Project with C#, .NET, and MVC Principles, Repository Pattern, CQRS, DDD, Dependency Injection and Dependency Inversion (Clean Architecture Fundamentals - Prof. Macoratti)
 
-## Descrição
-Este projeto é uma solução em C# no ambiente .NET que foi desenvolvida com o objetivo de estudar e aplicar os principais conceitos da Clean Architecture, bem como integrar diversos outros padrões e princípios de design de software. A Clean Architecture promove a construção de sistemas bem estruturados e altamente testáveis, garantindo a separação de preocupações e a manutenibilidade do código.
+## Description
+This project is a C# solution in the .NET environment that was developed with the aim of studying and applying the main concepts of Clean Architecture, as well as integrating several other software design patterns and principles. Clean Architecture promotes the construction of well-structured and highly testable systems, ensuring separation of concerns and code maintainability.
 
-### Principais Conceitos e Padrões
-- **Clean Architecture**: A arquitetura é organizada em camadas concêntricas, com uma ênfase na independência das camadas e na separação das responsabilidades. As camadas são: `Domain`, `Application`, `Infraestructure`, e `WebUI`.
+### Main Concepts and Patterns
+- **Clean Architecture**: The architecture is organized into concentric layers, with an emphasis on layer independence and separation of responsibilities. The layers are: `Domain`, `Application`, `Infra.Data`, `Infra.IoC` and `WebUI`.
 
-- **MVC (Model-View-Controller)**: A camada de apresentação segue o padrão MVC, onde o `Model` representa os dados e a lógica de negócios, a `View` é responsável pela apresentação e a `Controller` lida com a interação do usuário.
+- **MVC (Model-View-Controller)**: The presentation layer follows the MVC pattern, where the `Model` represents the data and business logic, the `View` is responsible for the presentation and the `Controller` handles user interaction.
 
-- **Padrão Repository**: A camada `Persistence` utiliza o padrão Repository para abstrair o acesso aos dados e promover a separação das operações de persistência.
+- **Repository Pattern**: The `Infra.Data` layer uses the Repository pattern to abstract data access and promote the separation of persistence operations.
 
-- **CQRS (Command Query Responsibility Segregation)**: A aplicação adota o princípio de CQRS, que separa as operações de leitura (Query) das operações de escrita (Command), para otimização e escalabilidade.
+- **CQRS (Command Query Responsibility Segregation)**: The application adopts the CQRS principle, which separates reading operations (Query) from writing operations (Command), for optimization and scalability.
 
-- **DDD (Domain-Driven Design)**: O projeto segue os princípios do DDD, com uma clara separação das entidades de domínio, agregados, e serviços de aplicação.
+- **DDD (Domain-Driven Design)**: The project follows some DDD principles, with a clear separation of domain entities, aggregates, and application services.
 
-- **Injeção de Dependência e Inversão de Dependência**: A inversão de dependência é implementada para permitir a injeção de dependências em todo o projeto, facilitando a troca de implementações e testabilidade.
+- **Dependency Injection and Dependency Inversion**: Dependency inversion is implemented to allow injection of dependencies throughout the project, facilitating implementation switching and testability.
 
-## Estrutura do Projeto
-A estrutura do projeto segue a organização da Clean Architecture:
+## Project Structure
+The project structure follows the Clean Architecture organization:
 
-- **Domain**: A camada de domínio que contém as entidades, agregados e regras de negócio.
+- **Domain**: The domain layer that contains the entities, aggregates and business rules.
 
-- **Application**: A camada de aplicação que lida com casos de uso e contém serviços de aplicação.
+- **Application**: The application layer that handles use cases and contains application services.
 
-- **Infraestructure**: A camada de persistência que cuida do acesso a bancos de dados ou outras formas de armazenamento de dados.
+- **Infra.Data**: The persistence layer that takes care of access to databases or other forms of data storage.
+ 
+- **Infra.IoC**: The control inversion and dependency injection layer.
 
-- **WebUI**: A camada de apresentação, onde a interação com o usuário é tratada.
+- **WebUI**: The presentation layer, where user interaction is handled.
 
-## Requisitos
-- Visual Studio 2019 ou superior
-- .NET 5.0 ou superior
+## Requirements
+- Visual Studio 2022 or higher
+- .NET 7.0 or higher
 
-## Configuração
-1. Clone este repositório em seu ambiente de desenvolvimento.
-2. Abra a solução no Visual Studio.
-3. Certifique-se de que a camada `Infraestructure` esteja configurada corretamente para se conectar ao seu banco de dados.
-4. Execute o projeto da camada `WebUI`.
+## Settings
+1. Clone this repository into your development environment.
+2. Open the solution in Visual Studio.
+3. Make sure the `Infra.Data` layer is configured correctly to connect to your database.
+4. Run the `WebUI` layer project.
 
-## Utilização
-O projeto é um exemplo em branco, mas você pode adicionar suas próprias entidades, casos de uso e controladores para implementar sua lógica de negócios. Certifique-se de seguir os princípios da Clean Architecture, DDD e outros padrões discutidos neste projeto.
+## Usage
+The project is a simple example of a store application with categories and products, but you can add your own entities, use cases, and controllers to implement your business logic. Make sure you follow the principles of Clean Architecture, DDD, and other standards discussed in this project.
 
-## Testes
-O projeto inclui uma estrutura de testes, usando bibliotecas como xUnit e Moq. Você pode escrever testes para validar a funcionalidade do seu código e garantir a qualidade do software.
+## Tests
+The project includes a testing framework, using libraries such as xUnit and Moq. You can write tests to validate the functionality of your code and ensure software quality.
 
-## Contribuição
-Sinta-se à vontade para contribuir para este projeto. Você pode adicionar novas funcionalidades, corrigir bugs ou melhorar a estrutura do projeto. Siga as práticas de desenvolvimento de software e os padrões utilizados neste projeto.
-
-## Autor
+## Author
 Jonathan de Carvalho Matos
-carvalhomatos.jonathan@gmail.com
+oakmatos.jonathan@gmail.com
 
-## Licença
+## License
 None

@@ -31,7 +31,7 @@ namespace CleanArchMvc.WebUI
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Categories}/{action=Index}/{id?}");
 
             app.Run();
         }
