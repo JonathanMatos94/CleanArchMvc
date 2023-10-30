@@ -25,7 +25,5 @@ public class ProductRemoveCommandHandler : IRequestHandler<ProductRemoveCommand,
         {
             var result = await _productRepository.RemoveAsync(product);
 
-            return await _productRepository.UpdateAsync(product);
-        }
     }
 }
