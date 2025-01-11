@@ -47,7 +47,7 @@ The project includes a testing framework, using libraries such as xUnit and Moq.
 
 ## Author
 Jonathan de Carvalho Matos
-oakmatos.jonathan@gmail.com
+carvalhomatos.jonathan@gmail.com
 
 ## License
 None
